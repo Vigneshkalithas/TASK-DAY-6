@@ -1,0 +1,527 @@
+﻿1ST QUESTION.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( "I’m JavaScript!’");
+ </script>
+ <!-- Whats the error in this ? -->
+</body>
+</html>
+ ANS :  Double or single quotation  is used to specify the strings("-"),
+not a double comma.
+
+
+2ND QUESTION.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html>
+
+
+ADD NEW SCRIPT FILE IN SAME FOLDER.
+
+
+alert("I’m invoked!");
+
+
+3RD QUESTION.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html.
+
+
+SCRIPT FILE.
+
+
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon
+alert(`World`)
+alert(3 +1+ 2); // this is multiple line code and its working
+
+
+
+
+ANS: 
+WHEN U RUN OR REFRESH THE HTML FILE IN BROWSER, ALERT THE IRST LINE I AM JAVASCRIPT AND TO CONTINUES TO RUN NEXT ALL FILES ONE BY ONE. FIRST 3 FILES ARE GIVEN STRING. THE LAST FILE IS NUMBER DATATYPE SO EXCUTE THE OPERTAIONS AND GIVE OUTPUT IN FOURTH ALERT.
+
+
+
+
+4TH QUESTION
+
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html
+
+
+SCRIPT FILE.
+
+
+let admin = 9;
+    fname = 10.5; 
+    fname = "Guvi";
+    lname = "geek";
+    admin = fname+" "+lname;
+alert( admin ); // "Guvi geek"
+
+
+
+
+5TH QUESTION.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html
+
+
+SCRIPT FILE
+
+
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek";
+let name = fname+" "+lname;
+alert( `hello ${name}` );
+
+
+ANS: USING TEMPLETE LITERAL ${ }, VIA BACTICS  SYMBOLS ( ` `).
+
+
+6TH QUESTION.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html
+
+
+SCRIPT FILE.
+
+
+let a = +prompt("First number?");
+let b = +prompt("Second number?");
+alert(a + b);
+
+
+
+
+ANS: USING TYPECASTING TO CONVERT STRINGS TO NUMBERS.
+
+
+7TH QUESTION.
+
+
+var a = 2 > 12;
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+
+ EXPLANTION;
+
+
+DECLARE VARIABLES a AND b IN STRING DATA TYBES, SO VAR a TAKES IT A STRING AND RUN IF CONDTIONS IS FLASE STATE SO, OUTPUT IS  ( "Code is Blasted" ).
+IF YOU GET CORRECT OUTPUT OR ( " Diffused" ), YOU CHANGE STRING  TO NUMBER IN VAR A.
+
+
+
+
+8TH QUESTION.
+
+
+let a = + prompt("Enter a number?");
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+
+
+EXPLANATION:
+
+
+TO GIVE ONLY NUMBERS TO CONSOLE FIRST STATE MENT,
+OR GIVE OTHER EXPECT NUMBERS TO PRINT SUCCES IN CONSOLE.
+IN FIRST LINE GIVE ( + ) TO CONVERY STRING TO NUMBERS.
+
+
+
+
+9TH QUESTION.
+
+
+let value = prompt('How many runs you scored in this ball..?');
+if (value ==4) {
+      console.log("You hit a Four");
+} 
+else if (value ==6) {
+      console.log("You hit a Six");
+} 
+else{
+      console.log("I couldn't figure out");
+}
+
+
+EXPLANTION:
+
+
+( == )DOUBLE EQUALS COMPARE TO VALUES  ONLY AFTER CONVERTING THEM INTO THE SAME TYPE.
+( === )  COMPARE TWO VALUES BUT IT DOES NOT DO THE TYPE CONVERTION.
+
+
+
+
+
+
+
+
+7.Fix the code to welcome the boss
+
+
+let message;
+if (null || 2 || undefined )
+{
+message = &quot;welcome boss&quot;;
+}
+else
+{
+message = &quot;Go away&quot;;
+}
+console.log(message);
+
+
+
+
+8.Fix the code to welcome the boss
+
+
+let message;
+let lock =null;
+
+
+//Dont change any code below this
+if (null || lock || undefined )
+{
+message = &quot;Go away&quot;;
+}
+else
+{
+message = &quot;welcome&quot;;
+}
+console.log(message);
+
+
+
+
+9.Fix the code to welcome the boss
+
+
+let message;
+let lock =null;
+//Dont change any code below this
+if (lock &amp;&amp; &quot; &quot; || undefined )
+{
+message = &quot;Go away&quot;;
+}
+else
+{
+message = &quot;welcome&quot;;
+}
+console.log(message);
+
+
+
+
+10.Whats the msg printed and why? Guess you answer before running it.
+
+
+var lemein = &#39;0&#39;;
+var lemeout = 0;
+var msg = &#39;&#39;;
+if (lemein) {
+msg += &#39;hi&#39;;
+}
+if (lemeout) {
+msg += &#39;Hello&#39;;
+}
+
+
+console.log(msg); //hi
+
+
+because string 0(&quot;0&quot;) is cnsidered true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Part 2 : Find the culprits and nail them — debugging javascript loops
+
+
+
+
+
+
+1.Write a code to print the numbers in the array
+Output: 1234567891011
+
+
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = &quot;&quot;;
+
+
+for (var i = 0; i &lt; 11; i++) {
+new_string += numsArr[i]
+}
+console.log(new_string);
+2.Write a code to print the numbers in the array
+Output: 1,2,3,4,5,6,7,8,9,10,11
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = new String(numsArr[0]);
+
+
+for (var i = 1; i &lt; 11; i++) {
+new_string += &quot;,&quot; +numsArr[i]
+}
+console.log(new_string);
+
+
+
+
+3.Write a code to print from last to first with spaces (Make sure there is no space after
+the last element 1)
+Output: 11 10 9 8 7 6 5 4 3 2 1
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = new String(numsArr[10]);
+
+
+for (var i = 9; i &gt;= 0; i--) {
+new_string += &quot; &quot;+ numsArr[i]
+}
+console.log(new_string);
+
+
+
+
+4.Write a code to replace the array value — If the number is even, replace it with
+‘even’.
+Output:[ 1, “even”, 3, “even”, 5, “even”, 7, “even”, 9, “even”, … ]
+
+
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i &lt;=10; i++) {
+if(numsArr[i] %2 == 0 )
+{
+numsArr[i] = &quot;even&quot;
+}
+}
+console.log(numsArr);
+
+
+
+
+5.Write a code to replace the array value — If the index is even, replace it with ‘even’.
+Output: [ “even”, 2, “even”, 4, “even”, 6, “even”, 8, “even”, 10, … ]
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i &lt;=10; i++) {
+if((i+1) %2 == 0 )
+{
+numsArr[i] = &quot;even&quot;
+}
+}
+console.log(numsArr);
+
+
+
+
+6.Write a code to add all the numbers in the array
+Output: 66
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i &lt;=10; i++) {
+
+
+sum += numsArr[i]
+}
+
+
+console.log(sum);
+
+
+
+
+7.Write a code to add the even numbers only
+Output: 30
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i &lt;10; i++) {
+if(numsArr[i]%2==0);
+sum += numsArr[i]
+}
+console.log(sum);
+
+
+
+
+8.Write a code to add the even numbers and subract the odd numbers
+Output: 94
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i &lt;=10; i++) {
+if(numsArr[i]%2!=0)
+{
+sum += numsArr[i]
+}
+else
+{
+sum -= numsArr[i]
+}
+}
+console.log(sum);
+
+
+
+
+9.Write a code to print inner arrays
+Output:
+
+
+Array(5) [ 1, 2, 3, 4, 5 ]
+Array(6) [ 6, 7, 8, 9, 10, 11 ]
+
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i &lt; numsArr.length; i++) {
+console.log( numsArr[i])
+
+
+
+
+10.Write a code to print elements in the inner arrays
+Output: 1234567891011
+
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all=&quot;0&quot;;
+for (var i = 0; i &lt; numsArr.length; i++) {
+var inner_array = numsArr[i];
+for(var j = 0 ; j &lt; inner_array.length;j++ )
+str_all +=inner_array[j]
+}
+console.log(str_all);
+
+
+Part3
+
+
+1.aa = (f,s,t) =&gt; {
+//let f,s,t;
+console.log(f,s,t);
+if(f&gt;s &amp;&amp;f&gt;t){
+console.log(f)}
+else if(s&gt;f &amp;&amp; s&gt;t){
+console.log(s)}
+else{
+console.log(t)}
+}
+aa(1,2,3);
+
+
+
+
+2.let n = &quot;123&quot;;
+console.log(add(n));
+function add(n)
+{
+let sum = 0;
+for(var i=0;i&lt;n.length;i++){
+sum+= parseInt(n[i])
+
+
+}
+return sum;
+}
+
+
+
+
+3.const arr = [9,8,5,6,4,3,2,1];
+(function() {
+let sum = 0;
+for (var i = 0; i &lt; arr.length; i++){
+sum += arr[i];
+}
+console.log(sum);
+return sum;
+})();
+
+
+
+
+4.var arr = [&quot;guvi&quot;, &quot;geek&quot;, &quot;zen&quot;, &quot;fullstack&quot;];
+var ano = function(arro) {
+for (var i = 0; i &lt;= arr.length; i++) {
+console.log(arr[i].toUpperCase() + arr[i].substr(1));
+}
+}
+ano();
